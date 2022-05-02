@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+.header {
+  background-color: #651bd5;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header>h1 {
+  color: white;
+  margin-bottom: 0;
+}
+
+.header>p {
+  color: white
+}
+
+.hero {
+  background-color: #f6eefc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.playerCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: 150px;
+  background-color: #cec0fc;
+
+  margin-bottom: 50px;
+}
+
+.playerCard>p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.tombolEdit {
+  color: #3860be;
+  cursor:pointer;
+}
+
+.playField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardGame {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+
+  margin-bottom: 20px
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cec0fc;
+  margin: 5px;
+  transition: all 0.5s;
+}
+
+.grid-item:hover {
+  background-color: #a435f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.tombolStart {
+  margin-bottom:30px;
+  width:200px;height:30px;
+  background-color: #a435f0;
+}
+
+.squareChecked {
+  background-color:#a435f0 ;
+}
